@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/X</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="shortcut icon" href="/Images/favicon.ico">
+</head>
+
+<body class="bg-black text-white">
+    <div class="mainContainer flex container mx-auto">
+
+        <div class="left w-2/4 p-4 m-1 sticky top-0 h-screen max-lg:w-28">
+            <div class="logo invert m-auto flex justify-center">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <div
+                class="sidebar flex gap-2 m-6 justify-end flex-col  font-bold w-[85%] absolute left-[21%] max-[500px]:m-0 max-[500px]:justify-center">
+
+
+                <div
+                    class="home flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Home</span>
+                </div>
+
+                <div
+                    class="seacrch flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Explore</span>
+                </div>
+
+                <div
+                    class="lists flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/list_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Lists</span>
+                </div>
+
+                <div
+                    class="bookmark flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/bookmark_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Bookmark</span>
+                </div>
+
+                <div
+                    class="Notification flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/notifications_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Notification</span>
+                </div>
+
+                <div
+                    class="messages flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/folder_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Messages</span>
+                </div>
+
+                <div
+                    class="community flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/communities_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Communities</span>
+                </div>
+
+                <div
+                    class="profile flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">Profile</span>
+                </div>
+
+                <div
+                    class="premium flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/workspace_premium_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert"
+                        alt="">
+                    <span class="hidden lg:block">Premium</span>
+                </div>
+
+                <div
+                    class="more flex gap-2 justify-center cursor-pointer transition ease-in duration-300 hover:bg-gray-600 hover:rounded hover:border-dashed w-fit p-1">
+                    <img src="/Images/pending_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="invert" alt="">
+                    <span class="hidden lg:block">More</span>
+                </div>
+
+
+                <div class="button flex justify-center items-center relative xl:pr-4 mr-12 max-lg:mr-0 max-lg:mt-2">
+                    <button class="bg-blue-600 text-white text-xl rounded-full h-12 my-4 
+           flex justify-center items-center
+           w-[50px] md:w-[140px] xl:w-[120px]">
+
+                        <!-- Pencil icon (visible on small screens only) -->
+                        <img src="/Images/edit_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt="Post"
+                            class="block md:hidden w-10 h-5">
+
+                        <!-- Text "Post" (visible on medium and larger screens only) -->
+                        <span class="hidden md:block">Post</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="center w-full border-2 border-gray-500 p-1 m-1">
+
+            <div class="top flex border-b p-1 sticky top-0 bg-black opacity-75">
+                <div class="left  w-1/2 flex justify-center font-bold text-lg hover:bg-gray-700 cursor-pointer">For You
+                </div>
+                <div class="underLine absolute w-14 bg-blue-700 h-1 left-[81px] bottom-[6px]"></div>
+                <div class="right w-1/2 flex justify-center text-lg  hover:bg-gray-700 cursor-pointer">Following</div>
+                <div class="setting m-2"><img src="Images/settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                        class="invert" alt=""></div>
+            </div>
+
+            <div class="whatHappen flex gap-4">
+                <div class="img">
+                    <img src="/Images/dp.png" class="rounded-full p-3" alt="">
+                </div>
+
+                <input class="w-full mx-2 bg-black text-white h-7 m-4 outline-none text-xl" type="text"
+                    placeholder="What's happening?">
+
+            </div>
+
+            <div class="flex gap-2 text-blue-600 ml-[80px] w-full">
+                <img src="/Images/globe_asia_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <div class="font-bold">Every one can reply</div>
+
+            </div>
+            <div class="w-[65%] h-[0.2px] bg-gray-400 my-3 m-auto"></div>
+
+            <div class="blueIcon flex gap-2 justify-start cursor-pointer ml-20 w-[40px] h-[20px] mb-2">
+                <img src="/Images/image_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="/Images/gif_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="/Images/ballot_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="/Images/add_reaction_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="/Images/calendar_clock_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                <img src="/Images/location_on_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.png" alt="">
+
+                 <div class="button flex justify-end items-center relative xl:pr-4 mr-12 max-lg:mr-0 max-lg:mt-2">
+                    <button class="bg-blue-600 text-white text-xl rounded-full h-[37px] w-[85px] my-4 
+           flex justify-center items-center relative left-[50%]">
+
+                        <!-- Text "Post" (visible on medium and larger screens only) -->
+                        <span class="hidden md:block">Post</span>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="line h-[0.2px] bg-gray-400 my-3 m-auto"></div>
+
+            <div class="posts">
+                <div class="post flex gap-5 mx-1">
+                    <div class="image">
+                        <img src="https://pbs.twimg.com/profile_images/1643070770317238273/JhEhaHDq_400x400.jpg"
+                            class="w-11 rounded-full m-3" alt="display Pic">
+                    </div>
+
+                    <div class="content rounded my-3 mx-2">
+                        <span class="font-bold hover:underline cursor-pointer py-3">Welcome to SDA Community</span>
+                        <div>Watch entrepreneurs pitch their ideas from SidraStart.com</div>
+                        <div class="posting w-full p-3">
+                            <img src="https://pbs.twimg.com/media/GjCz2ZXWUAAwZtK?format=jpg&name=900x900"
+                                class="rounded-xl ml-0" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="icon flex mx-3 justify-around">
+                    <div class="img"></div>
+                    <img src="/Images/comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+
+                    <img src="/Images/repeat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>45k</span>
+
+                    <img src="/Images/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>6.1k</span>
+
+                    <img src="/Images/bar_chart_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+                </div>
+                <div class="line h-[0.2px] bg-gray-400 my-3 m-auto"></div>
+
+                <div class="post flex gap-5 mx-1">
+                    <div class="image">
+                        <img src="https://pbs.twimg.com/profile_images/1643070770317238273/JhEhaHDq_400x400.jpg"
+                            class="w-11 rounded-full m-3" alt="display Pic">
+                    </div>
+
+                    <div class="content rounded my-3 mx-2">
+                        <span class="font-bold hover:underline cursor-pointer py-3">Welcome to SDA Community</span>
+                        <div>Watch entrepreneurs pitch their ideas from SidraStart.com</div>
+                        <div class="posting w-full p-3">
+                            <img src="https://pbs.twimg.com/media/GjCz2ZXWUAAwZtK?format=jpg&name=900x900"
+                                class="rounded-xl  ml-0" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="icon flex mx-3 justify-around">
+                    <div class="img"></div>
+                    <img src="/Images/comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+
+                    <img src="/Images/repeat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>45k</span>
+
+                    <img src="/Images/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>6.1k</span>
+
+                    <img src="/Images/bar_chart_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+                </div>
+
+                <div class="line h-[0.2px] bg-gray-400 my-3 m-auto"></div>
+
+                <div class="post flex gap-5 mx-1">
+                    <div class="image">
+                        <img src="https://pbs.twimg.com/profile_images/1643070770317238273/JhEhaHDq_400x400.jpg"
+                            class="w-11 rounded-full m-3" alt="display Pic">
+                    </div>
+
+                    <div class="content rounded my-3 mx-2">
+                        <span class="font-bold hover:underline cursor-pointer py-3">Welcome to SDA Community</span>
+                        <div>Watch entrepreneurs pitch their ideas from SidraStart.com</div>
+                        <div class="posting w-full p-3">
+                            <img src="https://pbs.twimg.com/media/GjCz2ZXWUAAwZtK?format=jpg&name=900x900"
+                                class="rounded-xl ml-0" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="icon flex mx-3 justify-around">
+                    <div class="img"></div>
+                    <img src="/Images/comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+
+                    <img src="/Images/repeat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>45k</span>
+
+                    <img src="/Images/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>6.1k</span>
+
+                    <img src="/Images/bar_chart_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+                </div>
+
+                <div class="line h-[0.2px] bg-gray-400 my-3 m-auto"></div>
+
+                <div class="post flex gap-5 mx-1">
+                    <div class="image">
+                        <img src="https://pbs.twimg.com/profile_images/1643070770317238273/JhEhaHDq_400x400.jpg"
+                            class="w-11 rounded-full m-3" alt="display Pic">
+                    </div>
+
+                    <div class="content rounded my-3 mx-2">
+                        <span class="font-bold hover:underline cursor-pointer py-3">Welcome to SDA Community</span>
+                        <div>Watch entrepreneurs pitch their ideas from SidraStart.com</div>
+                        <div class="posting w-full p-3">
+                            <img src="https://pbs.twimg.com/media/GjCz2ZXWUAAwZtK?format=jpg&name=900x900"
+                                class="rounded-xl ml-0" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="icon flex mx-3 justify-around cursor-pointer">
+                    <div class="img"></div>
+                    <img src="/Images/comment_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+
+                    <img src="/Images/repeat_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>45k</span>
+
+                    <img src="/Images/favorite_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>6.1k</span>
+
+                    <img src="/Images/bar_chart_24dp_EFEFEF_FILL0_wght400_GRAD0_opsz24.png" alt=""><span>2.1k</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right w-full p-4 m-1 hidden lg:block">
+
+            <div class="search">
+                <input type="text" placeholder="Search" class="w-1/2 rounded-full bg-gray-900 text-white px-4 py-2 m-3">
+            </div>
+
+            <div class="whats m-3 bg-gray-900 w-1/2 p-3 rounded-xl">
+                <h1 class="text-xl font-bold">What's Happening</h1>
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+                    <div class="font-bold">Trending in Pakistan</div>
+                    <div class="text-gray-400">Orry</div>
+                    <div class="text-gray-400">40.0k Tweets</div>
+                </div>
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+                    <div class="font-bold">Trending in Pakistan</div>
+                    <div class="text-gray-400">Faizan</div>
+                    <div class="text-gray-400">341.2k Tweets</div>
+                </div>
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+                    <div class="font-bold">Trending in Pakistan</div>
+                    <div class="text-gray-400">Mujeeb</div>
+                    <div class="text-gray-400">70.9k Tweets</div>
+                </div>
+
+            </div>
+
+            <div class="Follow m-3 bg-gray-900 w-4/5 p-3 rounded-xl sticky top-0">
+                <h1 class="text-xl font-bold">Who to follow</h1>
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+
+                    <div class="name flex flex-row justify-between">
+                        <img src="/Images/Xexchange.jpg" alt="here is image">
+                        <div class="txt flex flex-col">
+                            <h1>XExchange</h1>
+                            <p>@XExchangeApp</p>
+                        </div>
+                        <button class="follow bg-white text-black rounded-2xl w-[80px]">Follow</button>
+
+                    </div>
+
+                </div>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+
+                    <div class="name flex flex-row justify-between">
+                        <img src="/Images/AshSwap.jpg" alt="here is image">
+                        <div class="txt flex flex-col">
+                            <h1>AshSwap</h1>
+                            <p>@ash_swap</p>
+                        </div>
+                        <button class="follow bg-white text-black rounded-2xl w-[80px]">Follow</button>
+
+                    </div>
+
+
+                </div>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer px-4 p-3">
+
+                    <div class="name flex flex-row justify-between">
+                        <img src="/Images/youngParrot.jpg" alt="here is image">
+                        <div class="txt flex flex-col">
+                            <h1>YoungParrot</h1>
+                            <p>@youngParrotft</p>
+                        </div>
+                        <button class="follow bg-white text-black rounded-2xl w-[80px]">Follow</button>
+
+                    </div>
+
+                </div>
+                <p
+                    class="text-blue-700 cursor-pointer hover:bg-gray-800 h-10 flex items-center px-4 rounded-lg hover:underline">
+                    Show
+                    more</p>
+
+            </div>
+
+            <nav aria-label="Footer" role="navigation"
+                class="flex flex-wrap gap-4 text-gray-500 text-sm sticky top-[80vh]">
+                <!-- Terms of Service -->
+                <div>
+                    <a href="https://x.com/tos" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                        Terms of Service
+                    </a>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div>
+                    <a href="https://x.com/privacy" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                        Privacy Policy
+                    </a>
+                </div>
+
+                <!-- Cookie Policy -->
+                <div>
+                    <a href="https://support.x.com/articles/20170514" target="_blank" rel="noopener noreferrer"
+                        class="hover:underline">
+                        Cookie Policy
+                    </a>
+                </div>
+
+                <!-- Accessibility -->
+                <div>
+                    <a href="https://help.x.com/resources/accessibility" target="_blank" rel="noopener noreferrer"
+                        class="hover:underline">
+                        Accessibility
+                    </a>
+                </div>
+
+                <!-- Ads info -->
+                <div>
+                    <a href="https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo"
+                        target="_blank" rel="noopener noreferrer" class="hover:underline">
+                        Ads info
+                    </a>
+                </div>
+
+                <!-- More (button) -->
+                <div>
+                    <button type="button" aria-label="More" class="hover:underline">
+                        More
+                    </button>
+                </div>
+
+                <!-- Copyright -->
+                <div>
+                    © 2025 X Corp.
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
